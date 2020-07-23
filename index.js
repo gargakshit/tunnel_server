@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const { createProxyMiddleware } = require("http-proxy-middleware");
 const random = require("crypto-random-string");
@@ -93,5 +94,5 @@ app.use("*", async (req, res, next) => {
   })(req, res, next);
 });
 
-reverseServer.start(5001);
-app.listen(3020);
+reverseServer.start(process.env.SOCKETS);
+app.listen(process.env.PORT);
