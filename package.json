@@ -1,0 +1,17 @@
+{
+  "name": "@paperplane/tunnel",
+  "version": "1.0.0",
+  "description": "A reverse tunnel",
+  "main": "index.js",
+  "author": "Akshit Garg <garg.akshit@gmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "private": false,
+  "dependencies": {
+    "crypto-random-string": "^3.2.0",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.5",
+    "ioredis": "^4.17.3",
+    "uuid": "^8.2.0",
+    "websocket": "^1.0.31"
+  }
+}
