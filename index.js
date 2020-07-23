@@ -10,6 +10,7 @@ const reverseServer = new server();
 const app = express();
 
 app.use(express.json());
+app.set("trust proxy", "loopback");
 
 app.post("/", async (req, res) => {
   const sub = random({
